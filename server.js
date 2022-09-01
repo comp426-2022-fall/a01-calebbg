@@ -35,7 +35,7 @@ fs.readFile('./public/index.html', 'utf8', (err, data) => {
 // 2. set a header with content type `text/html`, and 
 // 3. end with the data that you are reading in from ./public/index.html.
 
-console.log(data);
+// console.log(data);
 
   const server = http.createServer((req, res) => {
     res.statusCode = 200;
