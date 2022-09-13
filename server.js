@@ -9,7 +9,7 @@ const fs = require('fs');
 
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
 const args = require('minimist')(process.argv.slice(2));
-args["name"]
+args["name"];
 
 // Define a const `port` using the argument from the command line. 
 // Make this const default to port 3000 if there is no argument given for `--port`.
@@ -36,7 +36,7 @@ fs.readFile('./public/index.html', 'utf8', (err, data) => {
 // 2. set a header with content type `text/html`, and 
 // 3. end with the data that you are reading in from ./public/index.html.
 
-// console.log(data);
+console.log(data);
 
   const server = http.createServer((req, res) => {
     res.statusCode = 200;
